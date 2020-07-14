@@ -1,0 +1,8 @@
+//allow us to have height when we use float property
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
