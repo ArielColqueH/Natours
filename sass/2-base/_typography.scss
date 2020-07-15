@@ -2,7 +2,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 3rem;
@@ -32,5 +32,39 @@ body {
     letter-spacing: 1.74rem;
     animation: moveInRight 1s ease-out;
     /* keyframe-name duration function */
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  //clipth the background iwhere the text is
+  -webkit-background-clip: text;
+  transition: all 0.2s;
+  //it does not matter if scale thats why still ing px
+  letter-spacing: 2px;
+  color: transparent;
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }

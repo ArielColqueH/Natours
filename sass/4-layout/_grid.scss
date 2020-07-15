@@ -1,7 +1,7 @@
 .row {
   max-width: $grid-width; //good practice
   //max width if it is minus than the expected , it use 100% of the viewport
-  background-color: #eee;
+  //background-color: #eee;
   margin: 0 auto;
   &:not(:last-child) {
     //.row:last:child
@@ -13,7 +13,7 @@
   //-----selector------
   //everything that starts with col-
   [class^="col-"] {
-    background-color: orangered;
+    //background-color: orangered;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
