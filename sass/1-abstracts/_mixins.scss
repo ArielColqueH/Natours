@@ -24,6 +24,10 @@
 //tab-land
 //big-desktop
 // 1emm = 16px
+
+//ORDER
+// base - typography - general layout - grid - page layout - components
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     //600px / 16px
