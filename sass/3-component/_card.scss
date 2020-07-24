@@ -16,6 +16,7 @@
     left: 0;
     width: 100%;
     //hide rotation on the card
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     //overhide the image so the radious can be visible
